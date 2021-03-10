@@ -3,18 +3,21 @@
 
 void setup() {
  // 2. Set the size of the sketch to be 500 x 500
-
+size(500,500);
  // The following code loads the image into the program
-  PImage baby = loadImage("fistPump.png");
-  
+  baby = loadImage("fistPump.png");
+  baby.resize(500,500);
   // 3. Resize the baby image to be the same size as the sketch
   //    Use the baby.resize() command for this
+
+background (baby);
 
 
   // 4. Set the baby image to be the background of your sketch
   //    Use the background() command for this
-
   
+ 
+
   // 5. Write the message "TESTED MY PROGRAM" at the top of the meme
   //    Use the text() command for this
 
@@ -24,7 +27,11 @@ void setup() {
 }
 
 void draw() {
-
+  textSize(15);
+   if (mousePressed){
+     fill(#ffffff);
+     text("WHEN YOU FAIL THE TEST BUT THINK YOU GOT 100%", 25, 75);
+  
   // 7. Write the messsage "IT WORKED FIRST TIME" at the bottom of the meme
 
   
@@ -37,4 +44,4 @@ void draw() {
   
   // MAKE SURE YOU SAVE YOUR CODE! 
 
-}
+   }}
