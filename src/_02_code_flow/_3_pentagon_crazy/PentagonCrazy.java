@@ -24,16 +24,16 @@ rob.setPenColor(0, 0, 255);
 int count= 0;
 		//  TURN ANGLE. Make another int variable for the angle the robot must turn. 
 		//  			Hint: Divide 360 by the number of sides the shape has to get the angle.
-		
+		int sides=5;
 		//  COUNT. Make another int variable to count how many times the loop has repeated
 		//         Set its start value to zero.
-
+int angle=360/sides;
 		//  LOOP. Start a while loop to repeat the DRAW, TURN, and INCREASE COUNT code 200 times. 
 		while(count<200){
 				//  DRAW.  Make the robot move the amount in your count variable
 		rob.move(count);
 				//  TURN.  Turn the robot the amount in your angle variable + 1
-rob.turn(360/5);
+rob.turn(angle+1);
 				//  INCREASE COUNT. Increase the count by 1
 		count+=1;
 		//  End the while loop here
