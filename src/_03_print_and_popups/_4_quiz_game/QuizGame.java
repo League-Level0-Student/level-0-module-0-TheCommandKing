@@ -57,8 +57,8 @@ public class QuizGame {
 		}
 		else {
 			score -= 1;}
-		answer = JOptionPane.showInputDialog("Which frequently used household item has a tree but no leaves?");
-		if(answer.equalsIgnoreCase ("mug")) {
+		answer = JOptionPane.showInputDialog("At first I have 4 legs, second I have 2 legs, and at last I have 3. What am I?");
+		if(answer.equalsIgnoreCase ("Human")) {
 			score += 1;	
 		}
 		else {
@@ -70,7 +70,7 @@ public class QuizGame {
 		else {
 			score -= 1;}
 		answer = JOptionPane.showInputDialog("What has three classes, can be found underground or high up, and can be a target for ultra-modern hopes or lavish nostalgia?");
-		if(answer.equalsIgnoreCase ("trains")) {
+		if(answer.equalsIgnoreCase ("train")) {
 			score += 1;	
 		}
 		else {

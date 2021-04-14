@@ -4,7 +4,7 @@ import javax.swing.JOptionPane;
 
 public class MadlibsOfTheAmazon {
 	
-	public static void main(String[] args) {
+	public static void 	main(String[] args) {
 		// Put this sentence in a pop up:
 		String prompt =  "If you find yourself having to cross a piranha-infested river, here's how to do it...";
 		JOptionPane.showMessageDialog(null,prompt);
