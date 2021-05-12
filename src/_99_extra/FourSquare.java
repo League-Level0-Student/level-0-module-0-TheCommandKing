@@ -10,7 +10,8 @@ Robot bob= new Robot();
 	void go() {
 		
 		// Make the robot move quickly (setSpeed)
-bob.setSpeed(100);
+bob.hide();
+		bob.setSpeed(200);
 		// Set the robot's pen width to 5                   
 		bob.setPenWidth(5);
 		// Put the robot's pen down

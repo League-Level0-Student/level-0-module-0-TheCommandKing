@@ -1,4 +1,4 @@
-package _04_amazing_games._1_scary_maze;
+=package _04_amazing_games._1_scary_maze;
 
 import java.awt.Dimension;
 

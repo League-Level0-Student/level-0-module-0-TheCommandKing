@@ -27,7 +27,7 @@ String place = JOptionPane.showInputDialog("Enter a Place");
 		"Piranhas are more "+adjective+" during the day, so cross the river at\n"  +
 		"night. Piranhas are attracted to fresh "+liquid+" and will most\n"  +
 		"likely take a bite out of your "+bodyPart+" if you "+verb+". Whatever\n"  +
-		"you do, if you have an open wound, try to find another way to get\n"  +
+		"you do, if you have an open wound in your "+bodyPart+", try to find another way to get\n"  +
 		"back to the "+place+". Good luck!";
 		JOptionPane.showMessageDialog(null,story);
 		// Make a pop-up that contains the final story. The \n escape characters add line breaks to the story. 

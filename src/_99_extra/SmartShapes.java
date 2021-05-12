@@ -9,6 +9,7 @@ public class SmartShapes {
 Robot bob = new Robot();
 
         // Put the robot's pen down
+bob.hide();
 bob.penDown();
 
         // Make the robot move as fast as possible
@@ -21,14 +22,14 @@ bob.setSpeed(1000);
     	
         // Start a while loop to repeat the MOVE, TURN, and COUNT code 4 times
 
-    	while (sides<10) {
+    	while (sides<600) {
 			
 		
         //         MOVE your robot 200 pixels
-bob.move(100);
+bob.move(2);
 
         //         TURN the robot 90 degrees to the right
-    	bob.turn(36);
+    	bob.turn(1);
     	
     	//         COUNT. Add one to the number of sides the robot has drawn      sides+=1;
 sides+=1;

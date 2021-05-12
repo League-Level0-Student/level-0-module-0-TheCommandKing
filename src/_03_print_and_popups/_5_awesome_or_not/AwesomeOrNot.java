@@ -33,7 +33,7 @@ public class AwesomeOrNot {
 		}
 		// 7. If your variable is 2
 		if (number == 2) {
-			JOptionPane.showMessageDialog(null, "" + AwesomeThing + "is made by aliens.");
+			JOptionPane.showMessageDialog(null, "" + AwesomeThing + " is made by aliens.");
 			// -- tell the user whatever they entered is boring.
 		}
 		// 8. If your variable is 3

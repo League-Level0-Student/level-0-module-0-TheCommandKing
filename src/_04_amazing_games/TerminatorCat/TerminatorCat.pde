@@ -9,9 +9,10 @@
 // This line of code creates a variable to hold your faccate picture
 // You will use it later.
 PImage cat;
-int x=0;
-int y=0;
-
+int x = 300;
+int y = 354;
+int x2 = x + 140;
+int y2 = y + 6;
 void setup() {
   
 // 2. The code below loads your cat picture into the program. 
@@ -29,7 +30,13 @@ cat.resize(750,750);
   }
 
 void draw() {
-  
+  if(x>width||y>height){
+   background(cat);
+  x = 300;
+ y = 354;
+ x2 = x + 140;
+ y2 = y + 6;
+}
 // 6. WHERE IS THE EYE? This code prints the x and y locations of the mouse when you click.
 //    You can use this to find the x and y for the center of the cat's eyes.
       if(mousePressed){
@@ -40,10 +47,7 @@ void draw() {
 //    The x,y position of the eye will be printed at the bottom of your processing window. 
 //    Variables for x and y have been created at the top of your sketch, 
 //    now you can set them equal to the values you just found.
-int x = 294;
-int y = 354;
-int x2 = 441;
-int y2 = 360;
+
 // 8. DRAW CIRCLES.
 //     The circles will have black lines around them by default. Put noStroke(); here to remove them.
 noStroke();
@@ -54,7 +58,7 @@ noStroke();
 // 10 Use the ellipse() command to draw a circle on the eye (you will have to guess its size). 
 //    Use the x and y variables you just created to place the ellipse in the correct location.
 //                  The ellipse command looks like this:
-                fill(255,0,0);
+                fill(255,0,70);
                 ellipse(x, y, 48, 62);
                 ellipse(x2,y2,48,62);
 // Run the program to make sure it is in the right place and is the right size.
@@ -63,10 +67,11 @@ noStroke();
 // 11.  LASER BEAM.  This code will make your ellipse move down and to the right when you press 
 //      the space bar. Run the program to test it.
 //      If you want it to move to the left, change to x-1=.
-void keyPressed( ) {
-   x+=1;
-    y+=1;
-   
+void keyPressed() {
+    x+=1;
+    y+=7;
+   x2-=1;
+   y2+=7;
 // 12.  If you want them to go faster, add more than one each time the key is pressed    
 }
  
